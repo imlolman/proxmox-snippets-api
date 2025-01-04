@@ -35,9 +35,10 @@ npm install
 3. Create a `.env` file in the root directory:
 ```env
 API_KEY=your_secret_api_key
-SNIPPETS_FOLDER=snippets
+SNIPPETS_FOLDER=/var/lib/vz/snippets
 PORT=3000
-FILENAME_PREFIX=local:snippets/uploaded/
+FILENAME_PREFIX=via-api
+RETURN_FILENAME_PREFIX=local:snippets/
 ```
 
 4. Build the project:
@@ -79,8 +80,8 @@ npm run dev
   "success": true,
   "message": "Snippet saved successfully",
   "data": {
-    "fileName": "vm_identifier-md5hash.yaml",
-    "prefixedFileName": "local:snippets/uploaded/vm_identifier-md5hash.yaml"
+    "fileName": "via-api-vm_identifier-md5hash.yaml",
+    "prefixedFileName": "local:snippets/via-api-vm_identifier-md5hash.yaml"
   }
 }
 ```

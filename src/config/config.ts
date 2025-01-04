@@ -18,5 +18,6 @@ const createSnippetsFolder = () => {
 export const config = {
   apiKey: process.env.API_KEY || '',
   snippetsFolder: createSnippetsFolder(),
-  filenamePrefix: process.env.FILENAME_PREFIX || 'local:snippets/'
+  filenamePrefix: process.env.FILENAME_PREFIX || 'local:snippets/',
+  returnFilenamePrefix: process.env.RETURN_FILENAME_PREFIX || 'local:snippets/'
 }; 
